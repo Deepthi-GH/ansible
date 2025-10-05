@@ -5,10 +5,10 @@
     NAME: from play leval
   # vars_files:
   # - course.yaml
-  vars_prompt: 
-  - name: NAME 
-    prompt: what is your NAME?
-    private: false
+  # vars_prompt: 
+  # - name: NAME 
+  #   prompt: what is your NAME?
+  #   private: false
  
   tasks:
   - name: testing variables preference
@@ -20,3 +20,4 @@
 # 1.command line
   # 2.task level
   #3.from files
+  #4.from prompt
