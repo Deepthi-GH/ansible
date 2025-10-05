@@ -9,8 +9,8 @@
   - name: print the course info
     vars: 
       COURSE: Ansible
-    ansible.builtin.debug:
-     msg: "course name is {{COURSE}},duration:{{DURATION}},trainer:{{TRAINER}}"
+      ansible.builtin.debug:
+      msg: "course name is {{COURSE}},duration:{{DURATION}},trainer:{{TRAINER}}"
 
 
 # In YAML (which Ansible uses for playbooks), if a variable’s value contains spaces, you normally must quote it:
