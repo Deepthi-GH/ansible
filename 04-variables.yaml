@@ -1,0 +1,11 @@
+- name: Define variables and assign a value
+  hosts: local
+  connection: local #Ansible is connecting to localhost
+  vars:  
+   COURSE: Devops
+   DURATION: 10hrs
+   TRAINER: Siva Kumar Reddy
+  tasks:
+  -name: print the course info
+  ansible.builtin.debug:
+   msg: "course name is {{COURSE}},duration:{{DURATION}},trainer:{{TRAINER}}"
