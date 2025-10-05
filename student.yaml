@@ -1,0 +1,41 @@
+- name: "Deepthi"
+  dob: "31-12-1992"
+  age: 33
+  addresses:
+   #object
+  - doorno: 10-510
+    street: "senkang"
+    city: "sengkang"
+    pin: 541215
+    type: current
+
+  - doorno: 10-510
+    street: "senkang"
+    city: "sengkang"
+    pin: 541215
+    type: perm
+skills:
+- java
+- devops
+- cloud
+
+- name: "Siva"
+  dob: "31-12-1991"
+  age: 34
+  addresses:
+   #object
+  - doorno: 10-510
+    street: "senkang"
+    city: "sengkang"
+    pin: 541215
+    type: current
+
+  - doorno: 10-510
+    street: "senkang"
+    city: "sengkang"
+    pin: 541215
+    type: perm
+skills:
+- java
+- devops
+- qlikview
