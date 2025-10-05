@@ -13,21 +13,3 @@
      msg: "course name is {{COURSE}},duration:{{DURATION}},trainer:{{TRAINER}}"
 
 
-# In YAML (which Ansible uses for playbooks), if a variable’s value contains spaces, you normally must quote it:
-
-# TRAINER: "Siva Kumar Reddy"
-
-
-# But — YAML also allows unquoted strings that contain spaces, as long as the parser can still understand the structure correctly.
-
-# So this:
-
-# TRAINER: Siva Kumar Reddy
-
-#is valid YAML, and Ansible internally parses it as a string "Siva Kumar Reddy".
-
-# Ansible automatically assigns double quotes around string values with spaces because:
-
-# YAML allows unquoted space-containing strings
-
-# The YAML parser treats them as plain strings internally
