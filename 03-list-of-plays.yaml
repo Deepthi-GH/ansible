@@ -1,0 +1,19 @@
+- name: list of playbooks
+  hosts: frontend
+  tasks:
+  - name: This is a playbook1.print a message using msg parameter.
+    ansible.builtin.debug:
+      msg: " hello from playbook 1 task 1"
+  - name: This is a playbook1.print a message using msg parameter.
+    ansible.builtin.debug:
+      msg: " hello from playbook 1 task 2"
+
+- name: list of playbooks
+  hosts: frontend
+  tasks:
+  - name: This is a playbook2.print a message using msg parameter.
+    ansible.builtin.debug:
+      msg: " hello from playbook 1 task 1"
+  - name: This is a playbook2.print a message using msg parameter.
+    ansible.builtin.debug:
+      msg: " hello from playbook 2 task 2"
