@@ -7,6 +7,6 @@
     private: false
 
   tasks:  
-  - name: print credentials
+  -name: print credentials
     ansible.buitlin.debug:
      msg: "username is: {{ username }}"
