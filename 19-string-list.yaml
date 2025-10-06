@@ -1,0 +1,9 @@
+- name: convert string to a list
+  hosts: local
+  connection: local
+  vars: 
+    technologies: devops,linux,shell,java
+  tasks: 
+  - name: convert string
+    ansible.builtin.debug: 
+      msg: "Hello, {{ technologies | split(',') }}"
