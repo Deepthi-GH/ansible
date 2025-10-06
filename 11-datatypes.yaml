@@ -10,7 +10,7 @@
     - linux
     - shell
     - ansible
-    concepts: #dictionary or map
+    concepts: #dictionary or map.cloud is a key.aws is a value.key value pair.
       cloud: AWS
       cm: ansible
   tasks:
@@ -18,11 +18,5 @@
     ansible.builtin.debug:
      msg: "course name: {{ COURSE  }},duration: {{ DURATION }}, is it live?:{{ Islive }},tools are: {{ tools }},concepts are: {{ concepts }}"  
 
-
-
-
-
-
-
-
-
+# list:[]
+# map:{} 
