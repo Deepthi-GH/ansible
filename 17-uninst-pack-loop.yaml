@@ -6,8 +6,8 @@
   - name: install and remove packages
     ansible.builtin.package: 
       name: "{{ item.name }}"
-      state: "{{ item.ssh_host_key_rsa_public_keytype }}"
+      state: "{{ item.state }}"
     loop:
     - { name: "nginx", state: "absent" }
     - { name: "mysql", state: "absent" }
-    - { name: "zip",   state: "present" }
+    - { name: "zip",   state: "latest" }
