@@ -17,7 +17,7 @@
       student_fact: "{{ lookup('file', 'student.yaml') | from_yaml }}"
 
   - name: save JSON formatted data to file
-    ansible.builtin.copy:
+    ansible.builtin.copy: 
       content: "{{ student_fact | to_nice_json }}"
       dest: ./student.json
       
