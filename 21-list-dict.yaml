@@ -45,7 +45,16 @@
       msg: "{{ command_output }}"  
 
   - name: redirect the command o/p
-    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.command: ls -ltr > /tmp/output.txt 
+    register: command_output
+    ignore_errors: true
+
+  - name: print the command output
+    ansible.builtin.debug:   
+      msg: "{{ command_output }}"      
+
+  - name: redirect the command o/p
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt #If the file doesn’t exist, it is created automatically
     register: command_output
 
   - name: print the command output
