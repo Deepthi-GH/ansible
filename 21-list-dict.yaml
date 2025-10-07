@@ -4,6 +4,7 @@
   vars:
     name: "deepthi kattika"
     gmail: Info@GMAIL.com
+    ipaddress: 345.345.100.200
     technologies: 
     - key: devops engineer
       value: automate infra
@@ -29,6 +30,10 @@
       
   - name: convert to lowercase
     ansible.builtin.debug: 
-      msg: "gmail: {{ gmail | lower }}"       
+      msg: "gmail: {{ gmail | lower }}"     
+
+  - name: check ip valid or not
+    ansible.builtin.debug: 
+      msg: "gmail: {{ ipaddress | ansible.utils.ipv4 }}"      
     
   
