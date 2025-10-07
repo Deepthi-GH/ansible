@@ -14,11 +14,7 @@
 
   - name: read student yaml file content and store it in a variable
     ansible.builtin.set_fact: 
-      student_fact: "{{ lookup('file', './student.yaml') | from_yaml }}"
-
-  - name: convert yaml file to json
-    ansible.builtin.debug:
-      msg: "json file : {{ student_fact | to_json }}"   
+      student_fact: "{{ lookup('file', 'student.yaml') | from_yaml }}"
 
   - name: save JSON formatted data to file
     ansible.builtin.copy:
