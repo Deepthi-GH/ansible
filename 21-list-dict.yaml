@@ -4,7 +4,7 @@
   vars:
     name: "deepthi kattika"
     gmail: Info@GMAIL.com
-    ipaddress: 345.345.100.200
+    ipaddress: 201.125.10.98
     technologies: 
     - key: devops engineer
       value: automate infra
@@ -34,6 +34,6 @@
 
   - name: check ip valid or not
     ansible.builtin.debug: 
-      msg: "gmail: {{ ipaddress | ansible.utils.ipv4 }}"      
+      msg: "ipaddr: {{ ipaddress | ansible.utils.ipv4 }}"      
     
   
