@@ -10,5 +10,5 @@
   tasks: 
   - name: convert  list to a dictionary
     ansible.builtin.debug: 
-      msg: "teachnologies: {{ technologies | items2dict }}"
+      msg: "roles: {{ technologies | items2dict }}"
     
