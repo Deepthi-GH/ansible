@@ -2,6 +2,8 @@
   hosts: local
   connection: local
   vars:
+    name: "deepthi kattika"
+    gmail: Info@GMAIL.com
     technologies: 
     - key: devops engineer
       value: automate infra
@@ -20,6 +22,13 @@
     ansible.builtin.copy: 
       content: "{{ student_fact | to_nice_json }}"
       dest: ./student.json
+
+  - name: convert to uppercase
+    ansible.builtin.debug: 
+      msg: "name: {{ name | upper }}"    
       
+  - name: convert to lowercase
+    ansible.builtin.debug: 
+      msg: "gmail: {{ gmail | lower }}"       
     
   
