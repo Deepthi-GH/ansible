@@ -1,0 +1,10 @@
+- name: convert dictionary to a list
+  hosts: local
+  connection: local
+  tags:
+    Application: payment
+    Environment: dev
+  tasks: 
+  - name: convert map to list
+    ansible.builtin.debug: 
+      msg: "Tags are:{{ tags | dict2items }}"
