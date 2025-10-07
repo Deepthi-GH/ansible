@@ -22,7 +22,7 @@
 
   - name: copy json into a file
     ansible.builtin.copy:
-      content: "{{ student_fact | to_json }}""
+      content: "{{ student_fact | to_json }}"
       dest: ./student.json
       
     
