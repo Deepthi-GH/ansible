@@ -9,3 +9,7 @@
   - name: convert map to list
     ansible.builtin.debug: 
       msg: "Tags are:{{ tags | dict2items }}"
+
+# Yes — tags here is just a dictionary (YAML key-value map).
+
+# And yes — you can name it anything you want (e.g., labels, metadata, info, etc.).
