@@ -11,4 +11,11 @@
   - name: convert  list to a dictionary
     ansible.builtin.debug: 
       msg: "roles: {{ technologies | items2dict }}"
-    
+
+  - name: read student yaml file content and store it in a variable
+    ansible.builtin.set_fact: 
+      student_fact: "{{ lookup('file', './student.yaml') }}"
+
+  - name: convert yaml file to json
+    ansible.builtin.debug:
+      msg: "json file : {{ student_fact | to_json }}"    
