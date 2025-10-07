@@ -37,7 +37,7 @@
       msg: "ipaddr: {{ ipaddress | ansible.utils.ipv4 }}"     
 
   - name: find root user in passwd file
-    ansible.builtin.command: cat /etc/passwd | grep root  
+    ansible.builtin.shell: cat /etc/passwd | grep root  
     register: command_output
 
   - name: print the command output
